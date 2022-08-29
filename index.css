@@ -1,0 +1,162 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.app {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./assets/home.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 20px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.ancients-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+    min-width: 40%;
+}
+
+.difficulty-container {
+    display: flex;
+    align-items: center;
+}
+
+.deck-container,
+.surrent-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ancient-card {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex-grow: 1;
+    width: 200px;
+    height: 260px;
+    max-height: 260px;
+}
+
+.active {
+    border: 2px solid red;
+}
+
+.difficulty-container {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    justify-content: center;
+}
+
+.difficulty {
+    border: 2px solid purple;
+    box-sizing: border-box;
+    color: purple;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    width: 79px;
+    height: 33px;
+}
+
+.activeDif {
+    background-color: red;
+}
+
+.deck-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    min-width: 30%;
+    visibility: hidden;
+}
+
+.shuffle-button {
+    background-color: red;
+    border: 2px solid purple;
+    color: purple;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.current-state {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 130px;
+    min-height: 30%;
+}
+
+.stage-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dots-container {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.dot {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+}
+
+.deck {
+    background-image: url(./assets/mythicCardBackground.png);
+    background-size: cover;
+    height: 190px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.last-card {
+    background-size: cover;
+    height: 190px;
+    width: 130px;
+}
+
+.stage-text {
+    color: purple;
+}
+
+.green {
+    background-color: green;
+}
+.brown {
+    background-color: brown;
+}
+.blue {
+    background-color: blue;
+}
+
+.current-state,
+.deck, 
+.last-card {
+    display: none;
+}
